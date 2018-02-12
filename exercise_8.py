@@ -22,6 +22,9 @@ while True:
     if player1_choice not in valid_values or player2_choice not in valid_values:
         print("Invalid input!")
         continue
+    elif player1_choice == player2_choice:
+        print("It's a draw!")
+        continue
     else:
         if player1_choice == 'ROCK':
             if player2_choice == 'SCISSORS':
